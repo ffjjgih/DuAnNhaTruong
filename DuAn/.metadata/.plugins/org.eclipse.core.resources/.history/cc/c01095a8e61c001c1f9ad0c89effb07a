@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế hoạch thi</title>
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/KHT.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="grid wide">
+                <img class="header_img" src="./assets/image/Poly.png" alt="">
+                <img class="header_icon_user" src="./assets/image/user.png" alt="">
+            </div>
+        </header>
+
+        <body>
+            <div class="container">
+                <ul class="container_button">
+                    <li>
+                        <div class="grid wide">
+                            <button class="button_add">THÊM</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="container_button">
+                    <li>
+                        <div class="container_search">
+                            <i class="container_search-icon fas fa-search"></i>
+                            <input type="text" placeholder="VD IT16308" class="container_search-input">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid wide">
+                            <button class="button_find">TÌM KIẾM</button>
+                        </div>
+                    </li>
+                </ul>
+                <!-- table -->
+                <div class="grid wide">
+                    <table class="table table-striped table_font">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Ngày thi</th>
+                                <th>Ca thi</th>
+                                <th>Phòng thi</th>
+                                <th>Tên môn</th>
+                                <th>Mã môn</th>
+                                <th>Loại thi</th>
+                                <th>Giáo viên</th>
+                                <th>Lớp</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fri, 23/4</td>
+                                <td>2</td>
+                                <td>P208</td>
+                                <td>Dự án 1 - Thương mại điện tử</td>
+                                <td>PRO1131</td>
+                                <td>Bảo vệ</td>
+                                <td>loanntt34</td>
+                                <td>PB16123-DIG</td>
+                                <td>
+                                    <button class="button_update js-btn_update">SỬA</button>
+                                    <button class="button_del">XÓA</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fri, 23/4</td>
+                                <td>2</td>
+                                <td>P208</td>
+                                <td>Dự án 1 - Thương mại điện tử</td>
+                                <td>PRO1131</td>
+                                <td>Bảo vệ</td>
+                                <td>loanntt34</td>
+                                <td>PB16123-DIG</td>
+                                <td>
+                                    <button class="button_update js-btn_update">SỬA</button>
+                                    <button class="button_del">XÓA</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fri, 23/4</td>
+                                <td>2</td>
+                                <td>P208</td>
+                                <td>Dự án 1 - Thương mại điện tử</td>
+                                <td>PRO1131</td>
+                                <td>Bảo vệ</td>
+                                <td>loanntt34</td>
+                                <td>PB16123-DIG</td>
+                                <td>
+                                    <button class="button_update js-btn_update">SỬA</button>
+                                    <button class="button_del" data-dismiss="modal">XÓA</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </body>
+        <div class="modal_update js-modal_update ">
+            <div class="modal_container_update js-modal_container_update">
+                <form action="">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Sửa thông tin</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-left">
+                            <ul>
+                                <li class="form_text">Ngày thi</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Phòng thi</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Mã môn</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Giáo viên</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                        </div>
+                        <div class="form-right">
+                            <ul>
+                                <li class="form_text">Ca thi</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Tên môn</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Loại thi</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                            <ul>
+                                <li class="form_text">Lớp</li>
+                                <li><input type="text" class="form_input"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="button">
+                            <button class="button_form_update sub">SUBMIT</button>
+                            <button class="button_form_update exit js-btn-close">THOÁT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const updateBtns = document.querySelectorAll('.js-btn_update');
+        const modal = document.querySelector('.js-modal_update');
+        const closeBtn = document.querySelector('.js-btn-close');
+        const modalContainer = document.querySelector('.js-modal_container_update');
+
+        // hiển thị modal, thêm class open
+        function showModal() {
+            modal.classList.add('open');
+        }
+        function hideModal() {
+            modal.classList.remove('open');
+        }
+
+        // lặp qua để lấy sự kiện
+        for (const updateBtn of updateBtns) {
+            updateBtn.addEventListener('click', showModal);
+        }
+        
+        modal.addEventListener('click', hideModal);
+
+        closeBtn.addEventListener('click', hideModal);
+
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation();
+        })
+    </script>
+</body>
+
+</html>

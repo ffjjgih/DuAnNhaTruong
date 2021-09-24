@@ -1,0 +1,117 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.container{
+    width: auto;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+
+.container_header{
+    margin-top: 10px;
+    font-size: var(--font_text);
+}
+
+.tblTT{
+    width: 50%;
+}
+
+.container_body{
+    width: auto;
+    height: 400px;
+    /* background-color: blue; */
+    margin-top: 15px;
+}
+
+.tbl_body{
+    text-align: center;
+    font-size: var(--font_text);
+}
+
+.footer{
+    width: 100%;
+    height: var(--header_height);
+    background-color: #ebebeb;
+    position: relative;
+}
+
+.btn_download{
+    width: 400px;
+    height: 45px;
+    background-color: var(--button_find);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: var(--button_font);
+    border-radius: 5px;
+    margin-top: 16px;
+    margin-left: 34%;
+}
+
+.btn_download:hover{
+    opacity: 0.8;
+}
+
+.modal_download{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_download.open{
+    display: flex;
+}
+
+.modal_download-container{
+    background: #ffff;
+    width: 510px;
+    height: 285px;
+    border: 2px dashed #0db04b;
+    border-radius: 10px;
+    animation: showModalFadeIn ease .6s;
+}
+
+.header-modal_dowload-container{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header-modal_dowload-container img{
+    width: 40px;
+    height: 40px;
+}
+
+.header-modal_dowload-container img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.body-modal_dowload-container img{
+    margin-left: 186px;
+    margin-top: 15px;
+}
+
+.footer-modal_dowload-container{
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+.modal-btn_download{
+    width: 255px;
+    height: 40px;
+    background-color: var(--button_find);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: var(--button_font);
+    border-radius: 5px;
+}
+
+.modal-btn_download:hover{
+    opacity: 0.8;
+}

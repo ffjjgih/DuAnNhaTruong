@@ -1,0 +1,140 @@
+package model;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+
+/**
+ * The persistent class for the DS_THI database table.
+ * 
+ */
+@Entity
+@Table(name="DS_THI")
+@NamedQuery(name="DsThi.findAll", query="SELECT d FROM DsThi d")
+public class DsThi implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="ID")
+	private int id;
+
+	@Column(name="BLOCKS")
+	private Object blocks;
+
+	@Column(name="CA_THI")
+	private int caThi;
+
+	@Column(name="LOAI_THI")
+	private Object loaiThi;
+
+	@Column(name="LOP")
+	private Object lop;
+
+	@Column(name="MA_MON")
+	private Object maMon;
+
+	private Object mua;
+
+	private Object nam;
+
+	@Column(name="NGAY_THI")
+	private Object ngayThi;
+
+	@Column(name="PHONG_THI")
+	private Object phongThi;
+
+	@Column(name="TEN_MON")
+	private Object tenMon;
+
+	public DsThi() {
+	}
+
+	public int getId() {
+		return this.id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Object getBlocks() {
+		return this.blocks;
+	}
+
+	public void setBlocks(Object blocks) {
+		this.blocks = blocks;
+	}
+
+	public int getCaThi() {
+		return this.caThi;
+	}
+
+	public void setCaThi(int caThi) {
+		this.caThi = caThi;
+	}
+
+	public Object getLoaiThi() {
+		return this.loaiThi;
+	}
+
+	public void setLoaiThi(Object loaiThi) {
+		this.loaiThi = loaiThi;
+	}
+
+	public Object getLop() {
+		return this.lop;
+	}
+
+	public void setLop(Object lop) {
+		this.lop = lop;
+	}
+
+	public Object getMaMon() {
+		return this.maMon;
+	}
+
+	public void setMaMon(Object maMon) {
+		this.maMon = maMon;
+	}
+
+	public Object getMua() {
+		return this.mua;
+	}
+
+	public void setMua(Object mua) {
+		this.mua = mua;
+	}
+
+	public Object getNam() {
+		return this.nam;
+	}
+
+	public void setNam(Object nam) {
+		this.nam = nam;
+	}
+
+	public Object getNgayThi() {
+		return this.ngayThi;
+	}
+
+	public void setNgayThi(Object ngayThi) {
+		this.ngayThi = ngayThi;
+	}
+
+	public Object getPhongThi() {
+		return this.phongThi;
+	}
+
+	public void setPhongThi(Object phongThi) {
+		this.phongThi = phongThi;
+	}
+
+	public Object getTenMon() {
+		return this.tenMon;
+	}
+
+	public void setTenMon(Object tenMon) {
+		this.tenMon = tenMon;
+	}
+
+}
