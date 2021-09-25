@@ -16,6 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
 <body>
@@ -39,12 +41,12 @@
                 </div>
                 <div class="container container_right-body">
                     <div class="container_right-body-intro">
-                        <h2>Danh sách ca thi</h2>
+                        <h2>Danh sách các kỳ</h2>
                     </div>
                     <div class="container container_right-body-controller">
                         <div class="container_right-body-controller-header">
                             <div class="container_right-body-controller-header-left">
-                                <a href=""><i class="fas fa-plus plus"></i>Thêm mới</a>
+                                <button type="button" class="btn btn-success btn_add js-btnAdd">Thêm mới</button>
                             </div>
                             <div class="container_right-body-controller-header-right">
                                 <select class="form-select form-select-lg mb-3 cbb"
@@ -60,7 +62,7 @@
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">TT</th>
-                                        <th scope="col">Học kỳ</th>
+                                        <th scope="col">Học kì</th>
                                         <th scope="col">Block</th>
                                         <th scope="col">Trạng thái</th>
                                         <th scope="col">Thao tác</th>
@@ -116,7 +118,54 @@
                 </div>
             </div>
         </div>
+
+        <!-- modal thêm kì mới -->
+        <div class="model_add js-model_add ">
+            <div class="model_add-container">
+                <form>
+                    <div class="container_form">
+                        <h2>Thêm kỳ học mới</h2>
+                        <div class="form-group">
+                            <label for="inputAddress">Năm học</label>
+                            <input type="text" class="form-control input-form" id="inputAddress"
+                                placeholder="Điền năm học hiện tại">
+                        </div>
+                        <div class="btn-group">
+                            <label for="">Block</label>
+                            <select id="selectFile" class="form-select form-select-lg mb-3 cbb"
+                                aria-label=".form-select-lg example">
+                                <option value="block1">Block 1</option>
+                                <option value="block2">Block 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Kỳ</label>
+                            <input type="text" class="form-control input-form" id="inputAddress2"
+                                placeholder="Điền kỳ học hiện tại">
+                        </div>
+                        <button type="button" class="btn btn-danger btn_exit">Exit</button>
+                        <button type="button" class="btn btn-primary btn_submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const btnThem = document.querySelector('.js-btnAdd');
+        const model = document.querySelector('.js-model_add');
+        const btnExit = document.querySelector('.btn_exit');
+        function showModel(){
+            model.classList.add('open');
+        }
+        function hideModel(){
+            model.classList.remove('open');
+        }
+
+        btnThem.addEventListener('click', showModel);
+
+        btnExit.addEventListener('click', hideModel);
+    </script>
 </body>
 
 </html>

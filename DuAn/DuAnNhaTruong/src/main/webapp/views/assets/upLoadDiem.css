@@ -9,12 +9,12 @@
     text-align: center;
 }
 
-.container_middle h1{
-    margin-top: 20px;
-}
-
 .container_header{
     margin: 15px 10px;
+}
+
+.container_middle h1{
+    margin-top: 9px;
 }
 
 .container_body{
@@ -26,6 +26,7 @@
 .container_body-button{
     width: 538px;
     height: 203px;
+    margin: 20px 20px;
 }
 
 .btnFile{
@@ -52,7 +53,7 @@
     /* border: 1px solid black; */
     border-radius: 5px;
     width: 400px;
-    margin-left: -20px;
+    margin-left: 50px;
 }
 
 .cbb{
@@ -82,14 +83,9 @@
     font-size: 14px !important;
     padding-top: 15px;
     line-height: 30px;
-    border: 1px solid #0db04b;
     border-radius: 10px;
-    display: none;
+    display: hide;
     text-align: center;
-}
-
-.rdo-group.open{
-    display: flex;
 }
 
 .container_body-submit{

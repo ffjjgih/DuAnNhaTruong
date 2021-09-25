@@ -48,6 +48,7 @@
     border-bottom: 2px solid #C4C4C4;
     width: auto;
     height: 65px;
+    margin-left: -16px;
 }
 
 .container_right-header-TT{
@@ -149,6 +150,12 @@
     text-align: center;
 }
 
+.btn_add{
+    width: 80px;
+    height: 40px;
+    font-size: 14px !important;
+}
+
 .button_update{
     width: 80px;
     height: 30px;
@@ -173,4 +180,68 @@
 
 .container_right-body-footer{
     margin-top: 20px;
+}
+
+/* modal add */
+.model_add{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.model_add.open{
+    display: flex;
+}
+
+.model_add-container{
+    width: 500px;
+    height: 300px;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-top: 10%;
+    font-size: var(--font_text);
+    margin-top: -20px;
+    animation: showModalFadeIn ease .6s;
+}
+
+.model_add-container h2{
+    text-align: center;
+}
+
+.btn_submit{
+    float: right;
+    width: 70px;
+    height: 40px;
+}
+
+.btn_exit{
+    float: right;
+    width: 70px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: var(--button_del);
+}
+
+.input-form{
+    width: 400px !important;
+    height: 30px !important;
+    margin-left: 30px;
+}
+
+.cbb{
+    height: 30px !important;
+    width: 400px !important;
+    font-size: 14px !important;
+    margin-top: 25px;
+    /* margin-left: -32px; */
+}
+
+.container_form{
+    padding: 30px 20px;
 }

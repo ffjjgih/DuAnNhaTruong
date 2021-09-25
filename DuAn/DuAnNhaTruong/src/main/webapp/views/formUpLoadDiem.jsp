@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sắp xếp lịch thi</title>
-    <link rel="stylesheet" href="./assets/CDLT.css">
+    <link rel="stylesheet" href="./assets/upLoadDiem.css">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/grid.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col container_middle">
                     <h1 class="h1 container_header">
-                        UPLOAD FILE KẾ HOẠCH THI
+                        UPLOAD FILE ĐIỂM
                     </h1>
                     <form action="">
                         <div class="container_body">
@@ -39,8 +39,24 @@
                                 <input type="file" id="UploadFileInput" class="btnFile"></input>
                             </div>
                             <div class="container_body-cbb">
-                               
-                            </div> 
+                                <div class="rdo-group " id="modalCBB">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1" checked>
+                                        <label class="form-check-label" for="inlineRadio1">ĐIỂM QUIZ</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">ĐIỂM ONLINE</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">ĐIỂM DANH</label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="container_body-submit">
                                 <button class="btn_submit">SUBMIT</button>
                             </div>

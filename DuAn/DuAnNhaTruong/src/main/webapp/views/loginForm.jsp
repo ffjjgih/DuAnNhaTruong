@@ -10,7 +10,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/grid.css">
-    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" type="text/css" href="./assets/login.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <hearder>
             <div class="header">
                 <div class="hearder_logo">
-                    <img class = "header_img" src="./image/Poly.png" alt="">
+                    <img class = "header_img" src="./assets/image/Poly.png" alt="">
                 </div>
             </div>
         </hearder>
@@ -42,7 +42,7 @@
                                 <button class = "button" type="text" name="" id="">SUBMIT</button>
                             </div>
                             <button class="google button">
-                                <img class = "img_google" src="./image/google.png" alt="">
+                                <img class = "img_google" src="./assets/image/google.png" alt="">
                             </button>
                         </div>
                     </div>
